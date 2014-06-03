@@ -23,40 +23,40 @@ class PluginFetchticket extends ServicePlugin
         }
 
         $variables = array(
-            /*T*/'Plugin Name'/*/T*/   => array(
+            lang('Plugin Name')   => array(
                 'type'          => 'hidden',
-                'description'   => /*T*/''/*/T*/,
-                'value'         => /*T*/'Tickets Generator'/*/T*/,
+                'description'   => '',
+                'value'         => lang('Tickets Generator'),
             ),
-            /*T*/'Enabled'/*/T*/       => array(
+            lang('Enabled')       => array(
                 'type'          => $enabledType,
-                'description'   => /*T*/'This is the service that actually does the fetching of E-mails for all E-mail Routing Rules that use the "POP3 fetching" routing type. Only USER authentication mechanism. Be aware that messages on the account will get erased after being imported, or bounced if invalid.'/*/T*/,
+                'description'   => lang('This is the service that actually does the fetching of E-mails for all E-mail Routing Rules that use the "POP3 fetching" routing type. Only USER authentication mechanism. Be aware that messages on the account will get erased after being imported, or bounced if invalid.'),
                 'value'         => '0',
             ),
-            /*T*/'Run schedule - Minute'/*/T*/  => array(
+            lang('Run schedule - Minute')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number, range, list or steps'/*/T*/,
+                'description'   => lang('Enter number, range, list or steps'),
                 'value'         => '30',
                 'helpid'        => '8',
             ),
-            /*T*/'Run schedule - Hour'/*/T*/  => array(
+            lang('Run schedule - Hour')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number, range, list or steps'/*/T*/,
+                'description'   => lang('Enter number, range, list or steps'),
                 'value'         => '*',
             ),
-            /*T*/'Run schedule - Day'/*/T*/  => array(
+            lang('Run schedule - Day')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number, range, list or steps'/*/T*/,
+                'description'   => lang('Enter number, range, list or steps'),
                 'value'         => '*',
             ),
-            /*T*/'Run schedule - Month'/*/T*/  => array(
+            lang('Run schedule - Month')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number, range, list or steps'/*/T*/,
+                'description'   => lang('Enter number, range, list or steps'),
                 'value'         => '*',
             ),
-            /*T*/'Run schedule - Day of the week'/*/T*/  => array(
+            lang('Run schedule - Day of the week')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number in range 0-6 (0 is Sunday) or a 3 letter shortcut (e.g. sun)'/*/T*/,
+                'description'   => lang('Enter number in range 0-6 (0 is Sunday) or a 3 letter shortcut (e.g. sun)'),
                 'value'         => '*',
             ),
         );
